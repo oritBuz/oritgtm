@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Orit Buzin GTM</title>
+  <meta name="description" content="Get in touch with Orit Buzin for fractional GTM strategy and demand generation. Serving Series A, B companies and PE-backed businesses." />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- ======================================================
+       NAVIGATION
+  ====================================================== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">Orit <span>Buzin</span></a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html#how-i-work">How I Work</a></li>
+          <li><a href="index.html#what-i-offer">About</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="contact.html" class="nav-cta">Let's Talk</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+          <i data-lucide="menu" style="width:22px;height:22px;"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ======================================================
+       PAGE HEADER
+  ====================================================== -->
+  <div class="contact-hero">
+    <div class="container">
+      <div class="contact-hero-inner">
+        <p class="section-label">Contact</p>
+        <h1 class="section-title" style="font-size:clamp(28px,4vw,42px);margin-bottom:14px;">
+          Let's talk about your pipeline.
+        </h1>
+        <p style="font-size:17px;color:var(--text-secondary);line-height:1.7;">
+          I work with a limited number of clients at any given time. If you're at Series A or B — or a PE-backed company building out your marketing function — fill out the form and I'll get back to you within one business day.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ======================================================
+       CONTACT BODY
+  ====================================================== -->
+  <div class="contact-body">
+    <div class="container">
+      <div class="contact-inner">
+
+        <!-- Sidebar -->
+        <div class="contact-sidebar animate-on-scroll">
+          <p class="contact-sidebar-text">
+            This form is for founders, marketing leaders, and PE operating partners who are evaluating whether a fractional GTM engagement makes sense for their company.
+          </p>
+
+          <div class="contact-detail">
+            <i data-lucide="map-pin"></i>
+            <div>
+              <strong>Location</strong>
+              New York City Metropolitan Area
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <i data-lucide="linkedin"></i>
+            <div>
+              <strong>LinkedIn</strong>
+              <a href="https://www.linkedin.com/in/orit-buzin/" target="_blank" rel="noopener noreferrer"
+                 style="color:var(--accent);border-bottom:1px solid currentColor;">
+                linkedin.com/in/orit-buzin
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <i data-lucide="clock"></i>
+            <div>
+              <strong>Response time</strong>
+              Within 1 business day
+            </div>
+          </div>
+
+          <div style="margin-top:40px;padding:24px;background:var(--fill);border:1px solid var(--border);">
+            <p style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-tertiary);margin-bottom:12px;">Best fit for</p>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
+              <li style="display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--text-secondary);">
+                <i data-lucide="check" style="width:16px;height:16px;color:var(--accent);margin-top:2px;flex-shrink:0;"></i>
+                Series A or B B2B companies
+              </li>
+              <li style="display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--text-secondary);">
+                <i data-lucide="check" style="width:16px;height:16px;color:var(--accent);margin-top:2px;flex-shrink:0;"></i>
+                PE-backed businesses building their GTM
+              </li>
+              <li style="display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--text-secondary);">
+                <i data-lucide="check" style="width:16px;height:16px;color:var(--accent);margin-top:2px;flex-shrink:0;"></i>
+                Companies with product-market fit, no marketing team yet
+              </li>
+              <li style="display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--text-secondary);">
+                <i data-lucide="check" style="width:16px;height:16px;color:var(--accent);margin-top:2px;flex-shrink:0;"></i>
+                B2B technology, SaaS, deep-tech, life sciences
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="animate-on-scroll delay-2">
+          <form
+            id="contact-form"
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            class="contact-form"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <p style="display:none;">
+              <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+            </p>
+
+            <!-- Name row -->
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="first-name">First Name<span>*</span></label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  class="form-input"
+                  placeholder="Jane"
+                  required
+                  autocomplete="given-name"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="last-name">Last Name<span>*</span></label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  class="form-input"
+                  placeholder="Smith"
+                  required
+                  autocomplete="family-name"
+                />
+              </div>
+            </div>
+
+            <!-- Email + Phone row -->
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="email">Email<span>*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="jane@company.com"
+                  required
+                  autocomplete="email"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  class="form-input"
+                  placeholder="+1 (555) 000-0000"
+                  autocomplete="tel"
+                />
+              </div>
+            </div>
+
+            <!-- Company + Role row -->
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="company">Company Name<span>*</span></label>
+                <input
+                  type="text"
+                  id="company"
+                  name="company"
+                  class="form-input"
+                  placeholder="Acme Inc."
+                  required
+                  autocomplete="organization"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="role">Your Role<span>*</span></label>
+                <input
+                  type="text"
+                  id="role"
+                  name="role"
+                  class="form-input"
+                  placeholder="Co-founder / VP Marketing"
+                  required
+                  autocomplete="organization-title"
+                />
+              </div>
+            </div>
+
+            <!-- Free text -->
+            <div class="form-group" style="margin-bottom:0;">
+              <label class="form-label" for="message">What is your main challenge?<span>*</span></label>
+              <textarea
+                id="message"
+                name="message"
+                class="form-textarea"
+                placeholder="Tell me about where you are today — your stage, your pipeline situation, what's working and what isn't. The more specific, the better."
+                required
+              ></textarea>
+            </div>
+
+            <!-- Submit -->
+            <button type="submit" class="form-submit">
+              Send Message
+              <i data-lucide="send" style="width:16px;height:16px;"></i>
+            </button>
+
+            <p class="form-note">
+              <i data-lucide="lock" style="width:12px;height:12px;display:inline;vertical-align:middle;margin-right:4px;"></i>
+              Your information is kept private and never shared.
+            </p>
+          </form>
+
+          <!-- Success state -->
+          <div id="form-success" class="form-success" role="alert">
+            <p>
+              <strong>Message received.</strong> Thank you for reaching out — I'll be in touch within one business day.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ======================================================
+       FOOTER
+  ====================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <p class="footer-brand-name">Orit <span>Buzin</span></p>
+          <p class="footer-tagline">Fractional GTM strategy and demand generation for B2B companies building serious pipelines.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <ul>
+            <li><a href="index.html#how-i-work">How I Work</a></li>
+            <li><a href="index.html#what-i-offer">About</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer-contact">
+          <a href="https://www.linkedin.com/in/orit-buzin/" target="_blank" rel="noopener noreferrer" class="footer-contact-item">
+            <i data-lucide="linkedin" style="width:16px;height:16px;"></i>
+            LinkedIn
+          </a>
+          <a href="contact.html" class="footer-contact-item">
+            <i data-lucide="mail" style="width:16px;height:16px;"></i>
+            Send a Message
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2025 Orit Buzin. All rights reserved.</p>
+        <p class="footer-kellogg">
+          <i data-lucide="award" style="width:14px;height:14px;"></i>
+          Kellogg Executive Education &nbsp;·&nbsp; Certified Google Ads Partner
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
